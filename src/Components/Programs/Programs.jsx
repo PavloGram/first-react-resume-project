@@ -13,17 +13,25 @@ function Programs() {
         {" "}
         <img className="program-img" src={program_1} alt="" />
         <div className="caption">
-            <img src={programIcon_1} alt=""/>
+            <img className="caption-img" src={programIcon_1} alt=""/>
             <p>Graduation Degree</p>
         </div>
       </div>
       <div className="program">
-        {" "}
-        <img className="program-img" src={program_2} alt="" />{" "}
+        
+        <img className="program-img" src={program_2} alt="" />
+        <div className="caption">
+            <img className="caption-img" src={programIcon_2} alt=""/>
+            <p>Masters Degree</p>
+        </div>
       </div>
       <div className="program">
-        {" "}
-        <img className="program-img" src={program_3} alt="" />{" "}
+        
+        <img className="program-img" src={program_3} alt="" />
+        <div className="caption">
+            <img className="caption-img" src={programIcon_3} alt=""/>
+            <p>Post Graduation</p>
+        </div>
       </div>
     </div>
   );
