@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    transition-property: color, background-color, opacity, padding, box-shadow;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .logo{
@@ -32,4 +35,13 @@
     background: #ffffff;
     padding: 14px 25px;
     border-radius: 30px;
+}
+
+.dark-nav{
+    background: #212EA0;
+
+}
+
+@media (max-width: 1024px){
+    
 }

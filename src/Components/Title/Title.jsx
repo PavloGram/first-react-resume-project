@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Title() {
+function Title({title, subTitle}) {
   return (
     <div className='title'>
-        <p>Our program</p>
-        <h2 style={{textTransform:"capitalize"}} className='title-title'>What we offer</h2>
+        <p>{title}</p>
+        <h2 style={{textTransform:"capitalize"}} className='title-title'>{subTitle}</h2>
     </div>
   )
 }
