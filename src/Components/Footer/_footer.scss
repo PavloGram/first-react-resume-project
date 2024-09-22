@@ -1,11 +1,19 @@
-.footer{
-    margin: 10px auto;
-    display: flex;
-    align-items: center;
+.footer {
+  margin: 10px auto;
+  padding: 15px 10%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 25px;
+  row-gap: 10px;
+
+  border-top: 1px solid #797979;
+  color: $base-text-color;
+  @media (min-width: $tablet) {
     justify-content: space-between;
-    border-top: 1px solid #797979;
-    padding: 15px 10%;
+  }
 }
-.footer-link{
-    text-decoration: underline;
+.footer-link {
+  text-decoration: underline;
 }

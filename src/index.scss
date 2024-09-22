@@ -1,3 +1,5 @@
+@import "/src/style/breakpoints";
+@import "/src/style/variables";
 @import "/src/style/app";
 @import "/src/Components/NavBar/navbar";
 @import "/src/Components/Hero/hero";
@@ -9,3 +11,4 @@
 @import "/src/Components/Contact/contacts";
 @import "/src/Components/Footer/footer";
 @import "/src/Components/VideoPlayer/videoPlayer";
+

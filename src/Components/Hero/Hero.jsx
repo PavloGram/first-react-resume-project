@@ -1,9 +1,9 @@
 import React from "react";
-import darkArrow from "../../images/dark-arrow.png"
+import darkArrow from "../../images/dark-arrow.png";
 
 function Hero() {
   return (
-    <div className="hero container">
+    <section className="hero ">
       <div className="hero-text">
         <h1 className="hero-title">
           We Ensure better education fora better world
@@ -13,9 +13,11 @@ function Hero() {
           knowledge, skills, and experiences needed to excel in the dynamic
           field of education
         </p>
-        <button className="hero-btn">Explore more <img src={darkArrow} alt="btn img" className="hero-img"/></button>
+        <button className="hero-btn">
+          Explore more <img src={darkArrow} alt="" className="hero-img" />
+        </button>
       </div>
-    </div>
+    </section>
   );
 }
 

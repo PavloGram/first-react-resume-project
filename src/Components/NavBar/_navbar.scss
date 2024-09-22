@@ -1,47 +1,97 @@
-.nav{
-    width: 100%;
-    // background: #333333;
-    color: #ffffff;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
-    transition-property: color, background-color, opacity, padding, box-shadow;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+
+  width: 100%;
+  padding: 10px 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: $base-design-color;
+  color: #ffffff;
+  transition-property: color, background-color, opacity, padding, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+  @media (min-width: $desktop) {
+    padding: 10px 10%;
+  }
 }
 
-.logo{
-    width: 180px;
+.logo {
+  width: 180px;
 }
-// .nav-list{
 
-// }
+.menu-item {
+  display: none;
+  @media (min-width: $tablet) {
+    margin: 5px 10px;
 
-.nav-item{
     display: inline-block;
+
     list-style: none;
+  }
+
+  @media (min-width: $desktop) {
     margin: 5px 20px;
+  }
 }
 
-.nav-link{
-    display: inline-block;
-    color: #212121;
-    background: #ffffff;
-    padding: 14px 25px;
-    border-radius: 30px;
+.dark-nav {
+  background: $base-design-color;
 }
 
-.dark-nav{
-    background: #212EA0;
+.mob-menu-container {
+  position: absolute;
+  top: 57px;
+  left: 0;
 
+  width: 100%;
+
+  pointer-events: all;
+  overflow: hidden;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
-@media (max-width: 1024px){
-    
+.mob-menu-list {
+  padding: 5px 0;
+
+  background: $base-design-color;
+  transform: translateY(-100%);
+
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+.mob-menu-item {
+  padding: 5px 0;
+
+  text-align: center;
+}
+
+.is-open {
+  transform: translateY(0);
+}
+
+.mob-menu-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  display: inline-block;
+
+  border: 0;
+  outline: 0;
+  background: transparent;
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

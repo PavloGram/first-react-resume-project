@@ -5,10 +5,14 @@ import program_3 from "../../images/program-3.jpg";
 import programIcon_1 from "../../images/program-icon-1.png";
 import programIcon_2 from "../../images/program-icon-2.png";
 import programIcon_3 from "../../images/program-icon-3.png";
+import Title from "../Title/Title";
 
 function Programs() {
   return (
+    <section> 
+    <Title title={"Our PROGRAM"} subTitle={"What we ofer"} />
     <div className="programs">
+       
       <div className="program">
         {" "}
         <img className="program-img" src={program_1} alt="" />
@@ -34,6 +38,8 @@ function Programs() {
         </div>
       </div>
     </div>
+    </section>
+    
   );
 }
 

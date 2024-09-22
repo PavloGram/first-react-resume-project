@@ -1,13 +1,17 @@
-.title{
-    text-align: center;
-    color: #212EA0;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 70px 0 30px;
-}
-.title-title{
-    font-size: 32px;
-    color: #000F38;
-    margin-top: 5px;
+.title {
+  margin: 70px 0 30px;
 
+  display: flex;
+  flex-direction: column-reverse;
+
+  text-align: center;
+  color: $base-design-color;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.title-title {
+  margin-top: 5px;
+
+  font-size: 32px;
+  color: $base-title-color;
 }

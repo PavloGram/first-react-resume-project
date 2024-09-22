@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
-function Title({title, subTitle}) {
+function Title({ title, subTitle }) {
   return (
-    <div className='title'>
-        <p>{title}</p>
-        <h2 style={{textTransform:"capitalize"}} className='title-title'>{subTitle}</h2>
+    <div className="title">
+      <h2 style={{ textTransform: "capitalize" }} className="title-title">
+        {subTitle}
+      </h2>
+      <p>{title}</p>
     </div>
-  )
+  );
 }
 
-export default Title
+export default Title;
