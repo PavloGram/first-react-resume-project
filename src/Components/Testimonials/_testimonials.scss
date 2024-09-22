@@ -1,10 +1,12 @@
 .testimonials {
-  position: relative;
+  display: none;
 
-  width: 480px;
-  margin: 80px auto;
-  padding: 0 80px;
   @media (min-width: $tablet) {
+    display: block;
+    position: relative;
+
+    margin: 80px auto;
+    padding: 0 80px;
     width: 768px;
   }
   @media (min-width: $desktop) {
